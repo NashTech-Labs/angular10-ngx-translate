@@ -1,0 +1,19 @@
+.lang-links {
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: darkslateblue;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  min-width: 100px;
+  margin: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.interpolation-content {
+  text-align: center;
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular10-ngx-translate';
+  title = 'Ang10-NGX-translate';
+  languageList = [
+    {code: 'en', label: 'English'},
+    {code: 'fr', label: 'French'}
+  ];
+
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+  }
+
+  changeLang(lang: string) {
+    this.translate.use(lang);
+  }
 }
